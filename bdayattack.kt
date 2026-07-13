@@ -9,8 +9,8 @@ fun hash16(message: String): Int {
 }
 
 fun main() {
-    val baseGoodMessage = "I, Alice, agree to pay Bob \$10 for washing my car."
-    val baseBadMessage = "I, Alice, agree to transfer ownership of my house to Bob."
+    val baseGoodMessage = "I, Alice, am a pacifist"
+    val baseBadMessage = "I, Alice, am an anarchist"
 
     val goodMessageHashes = HashMap<Int, String>()
 
