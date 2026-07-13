@@ -7,7 +7,16 @@ fun hash16(message: String): Int {
     }
     return (hash and 0xFFFF).toInt()
 }
-
+/*
+fun hash16BitAlpha(message: String): Int{
+    var hash = 0
+    for (char in message){
+        hash = (hash * 31) + char.code
+        hash = hash % 65536
+    }
+    return hash
+}
+*/
 fun main() {
     val baseGoodMessage = "I, Alice, am a pacifist"
     val baseBadMessage = "I, Alice, am an anarchist"
