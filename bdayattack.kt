@@ -9,8 +9,8 @@ fun hash16BitAlpha(message: String): Int{
     return hash
 }
 fun main() {
-    val baseGoodMessage = "I, Alice, am a pacifist"
-    val baseBadMessage = "I, Alice, am an anarchist"
+    val baseGoodMessage = "I, Alice, think that Bob is a very nice person"
+    val baseBadMessage = "I, Alice, truly hate Bob from the bottom of my heart"
     val goodMessageHashes = HashMap<Int, String>()
 
     println("--- Birthday Attack Simulation (Custom 16-bit Hash) ---")
@@ -41,7 +41,7 @@ fun main() {
             println("Good Message Alice signs:\n\"$matchingGoodMessage\"")
             println("Hash Value: $badHash")
             println("----------------------------------------------------------------")
-            println("Bad Message Bob exchanges:\n\"$badVariant\"")
+            println("Bad Message Eve exchanges:\n\"$badVariant\"")
             println("Hash Value: $badHash")
             println("================================================================")
             collisionFound = true
